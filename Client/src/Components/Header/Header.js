@@ -20,9 +20,8 @@ function Header(props) {
         Similarity: false,
         Translation: false
       }));
-    }, 500);
-    
-   props.handleLocal()
+    }, );
+    props.setclicked(true)
   }
 
   const HandleSent = () => {
@@ -33,7 +32,7 @@ function Header(props) {
       Similarity: false,
       Translation: false
    }));
-   props.handleLocal()
+   props.setclicked(true)
   }
 
   const HandleSim = () => {
@@ -44,7 +43,7 @@ function Header(props) {
       Similarity: true,
       Translation: false
    }));
-   props.handleLocal()
+   props.setclicked(true)
   }
 
   const HandleTrans = () => {
@@ -55,7 +54,7 @@ function Header(props) {
       Similarity: false,
       Translation: true
    }));
-   props.handleLocal()
+   props.setclicked(true)
 }
 
   return (

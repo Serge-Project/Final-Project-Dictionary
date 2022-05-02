@@ -1,17 +1,17 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Homepage from './Pages/Homepage/Homepage';
 // import ResultPage from './Pages/ResultPage/ResultPage';
 
 function App() {
 
+  const [clicked, setclicked] = useState(false)
   const [features, setfeatures] = useState({
       Definition: true,
       Sentence: false,
       Similarity: false, 
       Translation: false
   })
-
 
   useEffect(() => {
     const features = JSON.parse(window.localStorage.getItem('features'));
@@ -20,29 +20,30 @@ function App() {
     }
   }, []);
 
-
-
   useEffect(() => {
     const local = window.localStorage.getItem('features');
-    // console.log("This is local:  ", local)
     if( local === null) {
-      // console.log("Not yet")
       window.localStorage.setItem("features", JSON.stringify(features));
-    }else{
-      // console.log('yes you have')
     }
   }, [features]);
 
-  
-  const handleLocal = () => {
-    console.log(features)
-    localStorage.setItem("features", JSON.stringify(features));
-  }
-
+  useEffect(() => {
+    if(clicked) {
+        try {
+          localStorage.setItem("features", JSON.stringify(features))
+        } catch (error) {}
+        setclicked(false)
+    }
+   
+  }, [features])
 
   return (
     <div className="App">
-      <Homepage features={features} setfeatures={setfeatures} handleLocal={handleLocal} />
+      <Homepage features={features} 
+                setfeatures={setfeatures} 
+                clicked={clicked} 
+                setclicked={setclicked}
+          />
       {/* <ResultPage/> */}
     </div>
   );

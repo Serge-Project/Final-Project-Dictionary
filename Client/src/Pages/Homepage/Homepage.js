@@ -6,7 +6,11 @@ import '../Homepage/Homepage.css'
 function Homepage(props) {
   return (
         <div className='homepage'>
-            <Header features={props.features} setfeatures={props.setfeatures} handleLocal={props.handleLocal}/>
+            <Header features={props.features} 
+                    setfeatures={props.setfeatures} 
+                    clicked={props.clicked}
+                    setclicked={props.setclicked}
+                    />
             <Home/>
         </div>
   )
