@@ -1,0 +1,136 @@
+.resultPageContainer{
+    margin-top: 75px;
+    font-family: 'Playfair Display', serif;
+}
+
+.bannerContainer{
+    background-color: rgb(182, 182, 226);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: large;
+}
+
+.dictionnary {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.bannerContainer a{
+    padding: 13px 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+}
+
+.bannerContainer a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+.bannerContainer a.active {
+    background-color: #7f70a8;
+    color: white;
+  }
+
+.stickSearchBar{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 15px 0;
+    background-color: rgb(244, 235, 223);
+}
+
+.stickSearchBar input{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 18px;
+    width: 250px;
+    outline: none;
+}
+
+.stickSearchBar Button{
+    /* float: right; */
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 18px;
+    background: #ddd;
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.lookUpWord{
+    font-weight: 500;
+    font-size: 45px;
+    padding: 20px 30px 20px 170px;
+}
+
+.itemCategory {
+    opacity: 0.3;
+}
+
+/* .definitionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    border-top: 3px solid red;
+    min-width: 75vw;
+    padding: 15px 30px 15px 50px;
+    font-size: 17px;
+}
+
+.wordDef {
+    font-weight: 700;
+}
+
+.description{
+    font-style: italic;
+}
+
+.definition{
+    border-top: 1.5px solid gray;
+    min-width: 75vw;
+}
+
+.definition p{
+    font-size: large;
+    font-weight: 600;
+    padding: 0 0 0 20px;
+    max-width: 70vw;
+}
+
+
+.exampleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.exampleBlock{
+    padding: 3px 0px 4px 0px;
+    max-width: 70vw;
+    display: flex;
+    align-items: center;
+}
+
+.example1{
+    padding-left: 7px;
+}
+
+.example2{
+    padding-left: 7px;
+}
+
+.moreExamples{
+    cursor: pointer;
+} */
+

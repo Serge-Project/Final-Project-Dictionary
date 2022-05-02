@@ -1,0 +1,61 @@
+.definitionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    border-top: 3px solid red;
+    min-width: 75vw;
+    padding: 15px 30px 15px 50px;
+    font-size: 17px;
+}
+
+.wordDef {
+    font-weight: 700;
+}
+
+.description{
+    font-style: italic;
+}
+
+.definition{
+    border-top: 1.5px solid gray;
+    min-width: 75vw;
+}
+
+.definition p{
+    font-size: large;
+    font-weight: 600;
+    padding: 0 0 0 20px;
+    max-width: 70vw;
+}
+
+
+.exampleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.exampleBlock{
+    padding: 3px 0px 4px 0px;
+    max-width: 70vw;
+    display: flex;
+    align-items: center;
+}
+
+.example1{
+    padding-left: 7px;
+}
+
+.example2{
+    padding-left: 7px;
+}
+
+.moreExamples{
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+

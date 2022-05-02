@@ -1,0 +1,39 @@
+.home{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.searchContainer button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 18px;
+    background: #ddd;
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.searchTitle {
+    font-size: 56px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+.firstLetter {
+    color: #D118B4;
+}
+
+.secondLetter{
+    color: #2F49C9;
+}
