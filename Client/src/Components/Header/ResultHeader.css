@@ -1,0 +1,38 @@
+.bannerContainer{
+    background-color: rgb(182, 182, 226);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* .dictionnary {
+    font-weight: 700;
+    font-size: 30px;
+} */
+p:first-child {
+    color: rgb(253, 253, 255) !important; /** Use important only in very rare situations **/
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bannerContainer a{
+    padding: 13px 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+}
+
+.bannerContainer a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+.bannerContainer a.active {
+    background-color: #7f70a8;
+    color: white;
+  }
+

@@ -10,8 +10,15 @@ function Homepage(props) {
                     setfeatures={props.setfeatures} 
                     clicked={props.clicked}
                     setclicked={props.setclicked}
+                    
                     />
-            <Home/>
+            <Home   features={props.features} 
+                    setfeatures={props.setfeatures} 
+                    clicked={props.clicked}
+                    setclicked={props.setclicked}
+                    fetching={props.fetching}
+                    setfetching={props.setfetching} 
+            />
         </div>
   )
 }

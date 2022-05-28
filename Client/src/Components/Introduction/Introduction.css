@@ -1,0 +1,9 @@
+.TextIntro {
+    color: brown;
+    font-size: 18px;
+}
+
+p:first-child {
+    color: rgb(29, 133, 202) !important; /** Use important only in very rare situations **/
+    font-size: 30px;
+}
