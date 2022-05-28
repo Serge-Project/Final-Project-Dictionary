@@ -47,7 +47,6 @@ def Print_Example(Result):
             check = False
             print()
 
-
 def main():
     # model, tokenizer = Load_Bert()
     while True:

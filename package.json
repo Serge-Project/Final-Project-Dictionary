@@ -3,19 +3,46 @@
   "type": "commonjs",
   
   "dependencies": {
-    "async_hooks": "^1.0.0",
-    "axios": "^0.27.2",
-    "express": "^4.18.1",
-    "fs": "^0.0.1-security",
-    "node-wordnet": "^0.1.12",
-    "path": "^0.12.7",
-    "url": "^0.11.0",
-    "util": "^0.12.4"
+  
+    
+  "async_hooks": "^1.0.0",
+  
+    
+  "axios": "^0.27.2",
+  
+    
+  "cors": "^2.8.5",
+  
+    
+  "express": "^4.18.1",
+  
+    
+  "fs": "^0.0.1-security",
+  
+    
+  "node-wordnet": "^0.1.12",
+  
+    
+  "path": "^0.12.7",
+  
+    
+  "url": "^0.11.0",
+  
+    
+  "util": "^0.12.4"
+  
   },
+  
   "browser": {
-    "fs": false,
-    "path": false,
-    "os": false
+  
+    
+  "fs": false,
+  
+    
+  "path": false,
+  
+    
+  "os": false
+  
   }
- 
 }
